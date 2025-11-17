@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import Header from "./Header";
 
 export default function Products() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const perfumes = [
         {
             id: 1,

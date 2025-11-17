@@ -1,12 +1,16 @@
+import { useEffect } from "react";
 import Header from "./Header";
 
 export default function About() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <Header home={true} contact={true} products={true} />
             <div className="min-h-screen bg-black text-white px-6 md:px-12 py-20 flex flex-col gap-20">
 
-                
+
                 <section className="text-center md:text-left max-w-3xl mx-auto">
                     <h2 className="text-5xl font-bold tracking-wide" style={{ fontFamily: 'bebas' }}>
                         About Sniff It
@@ -19,7 +23,7 @@ export default function About() {
                     </p>
                 </section>
 
-               
+
                 <section className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
                     <div className="md:w-1/2">
                         <img
@@ -37,7 +41,7 @@ export default function About() {
                     </div>
                 </section>
 
-                
+
                 <section className="max-w-4xl mx-auto text-center md:text-left">
                     <h3 className="text-3xl font-semibold text-gray-200 mb-8">Our Values</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-300">
@@ -56,7 +60,7 @@ export default function About() {
                     </div>
                 </section>
 
-                
+
                 <section className="max-w-4xl mx-auto text-center md:text-left">
                     <h3 className="text-3xl font-semibold text-gray-200 mb-4">Our Expertise</h3>
                     <p className="text-gray-300 text-lg leading-relaxed">
@@ -64,7 +68,7 @@ export default function About() {
                     </p>
                 </section>
 
-              
+
                 <section className="text-center">
                     <button className="mt-4 bg-white text-black px-6 py-4 rounded-md text-lg font-semibold hover:bg-gray-200 transition-all duration-200">
                         Discover Our Collection

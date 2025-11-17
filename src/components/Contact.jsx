@@ -1,7 +1,14 @@
 import Header from "./Header";
+import { useEffect } from "react";
 import { FaInstagram, FaTiktok, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Header products={true} about={true} home={true} />
@@ -17,7 +24,7 @@ export default function Contact() {
                         />
                     </div>
 
-                    
+
                     <div className="md:w-1/2 w-full text-center md:text-left px-4 md:px-0">
                         <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: 'bebas' }}>
                             Get in Touch

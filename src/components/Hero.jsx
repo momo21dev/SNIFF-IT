@@ -1,7 +1,11 @@
 import { Link } from "react-router";
 import Header from "./Header";
+import { useEffect } from "react";
 
 export default function Hero() {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
     return (
         <>
             <Header contact={true} about={true} products={true} />

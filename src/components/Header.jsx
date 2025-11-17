@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, Links } from 'react-router';
+import { Link } from 'react-router';
 
 export default function Header({ home = false, products = false, about = false, contact = false }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,14 +7,14 @@ export default function Header({ home = false, products = false, about = false, 
     return (
         <header className="w-full py-6 px-6 sm:px-12 flex justify-between items-center text-white relative">
 
-
-            <h1
-                className="text-3xl sm:text-4xl tracking-widest"
-                style={{ fontFamily: 'bebas' }}
-            >
-                SNIFF IT
-            </h1>
-
+            <Link to={'/'}>
+                <h1
+                    className="text-3xl sm:text-4xl tracking-widest"
+                    style={{ fontFamily: 'bebas' }}
+                >
+                    SNIFF IT
+                </h1>
+            </Link>
 
             <nav className="hidden md:block">
                 <ul className="flex gap-10 text-lg font-light">
