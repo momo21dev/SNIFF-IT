@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Header from "./Header";
+import { Link } from "react-router";
 
 export default function About() {
     useEffect(() => {
@@ -70,9 +71,11 @@ export default function About() {
 
 
                 <section className="text-center">
-                    <button className="mt-4 bg-white text-black px-6 py-4 rounded-md text-lg font-semibold hover:bg-gray-200 transition-all duration-200">
-                        Discover Our Collection
-                    </button>
+                    <Link to={'/product'}>
+                        <button className="mt-4 bg-white text-black px-6 py-4 rounded-md text-lg font-semibold hover:bg-gray-200 transition-all duration-200">
+                            Discover Our Collection
+                        </button>
+                    </Link>
                 </section>
 
             </div>
